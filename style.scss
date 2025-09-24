@@ -1,0 +1,35 @@
+// seletor{propriedade:valor;}
+// comentario de apenas uma linha;
+/*
+comentario de varias linhas
+*/
+
+// * é o seletor global
+*{
+    margin: 0;
+    // espaçamento externo das tags
+    padding: 0;
+    // espaçamento interno das tags
+    box-sizing: border-box;
+    // Faz o calculo correto dos tamanhos dos elementos
+}
+
+// seletor{propriedade:valor;}
+// tag - seletor
+img{
+    width: 150px;
+}
+
+// .class - seletor
+.titulo{
+    color: red;
+}
+
+// #id - seletor
+#btn1{
+    background-color: purple;
+}
+
+body{
+    background-color: green;
+}
