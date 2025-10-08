@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinema</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinema Vai Na Web</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Cinema VNW</h1>
-    </header>
-    <main>
-      <!-- main => conteudo principal da pagina -->
-         <!-- card -->
-          <div>
-            <!-- div -> dividir -->
-             <img src="https://m.media-amazon.com/images/M/MV5BYjUzZTQxOTYtOTM2ZC00MmJhLTk4NzAtNmFhOGZhMjMxOWNkXkEyXkFqcGc@._V1_.jpg" alt="Imagem do filme Invocação do mal 4">
-             <h2>Invocação do Mal 4</h2>
-             <button>Compre seu Ingresso</button>
-          </div>
+  <header>
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Filmes</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+    <h1 class="titulo">Cinema Vai Na Web</h1>
+  </header>
 
-          <div>
-            <img src="https://br.web.img3.acsta.net/pictures/17/03/30/22/44/345288.jpg" alt="Filme do It a Coisa">
-            <h2>It - A Coisa</h2>
-            <button>Compre seu Ingresso</button>
-          </div>
+  <main>
+    <div class="cards">
+      <div class="card">
+        <div class="poster">
+          <img src="https://m.media-amazon.com/images/M/MV5BYjUzZTQxOTYtOTM2ZC00MmJhLTk4NzAtNmFhOGZhMjMxOWNkXkEyXkFqcGc@._V1_.jpg" alt="Invocação do Mal 4">
+        </div>
+        <h2>Invocação do Mal 4</h2>
+        <button>Compre seu Ingresso</button>
+      </div>
 
-          <div>
-            <img src="https://br.web.img2.acsta.net/pictures/23/06/19/19/20/4152271.jpg" alt="Filme Agente Stone">
-            <h2>Agente Stone</h2>
-            <button>Compre seu Ingresso</button>
-          </div>
-    </main>
+      <div class="card">
+        <div class="poster">
+          <img src="https://br.web.img3.acsta.net/pictures/17/03/30/22/44/345288.jpg" alt="It - A Coisa">
+        </div>
+        <h2>It - A Coisa</h2>
+        <button>Compre seu Ingresso</button>
+      </div>
+
+      <div class="card">
+        <div class="poster">
+          <img src="https://br.web.img2.acsta.net/pictures/23/06/19/19/20/4152271.jpg" alt="Agente Stone">
+        </div>
+        <h2>Agente Stone</h2>
+        <button>Compre seu Ingresso</button>
+      </div>
+    </div>
+  </main>
 </body>
 </html>

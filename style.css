@@ -1,20 +1,105 @@
-/*
-comentario de varias linhas
-*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-img {
-  width: 150px;
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #111;
+  color: #fff;
 }
 
-.titulo {
-  color: red;
+header {
+  background: #222;
+  padding: 20px;
+  text-align: center;
+}
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+header ul li a:hover {
+  color: #f39c12;
+}
+header .titulo {
+  margin: 0;
+  font-family: "Gravitas One", serif;
+  font-size: 3rem;
+  color: #f39c12;
 }
 
-#btn1 {
-  background-color: purple;
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px;
+}
+
+.card {
+  width: 250px;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+  transition: transform 0.3s, z-index 0.3s;
+}
+.card h2 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  position: relative;
+  z-index: 5;
+}
+.card button {
+  padding: 10px 15px;
+  background: #f39c12;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.card button:hover {
+  background: #d35400;
+}
+
+.poster {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 12px;
+  z-index: 0;
+}
+.poster img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+}
+.poster:hover {
+  transform: scale(1.1);
+  z-index: 10;
+  border-radius: 10%;
+  border: solid #f39c12 1px;
+  z-index: 5;
 }/*# sourceMappingURL=style.css.map */
